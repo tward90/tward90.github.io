@@ -1,3 +1,95 @@
-.mx-auto  {
-    background: #cdcdcd;
+.navbar-light {
+    background-color: #f3f4f5;
+  }
+
+.intro {
+    font-family: Impact, Charcoal, serif;
+    ;
+}
+
+.intro_small {
+    font-family: Impact, Charcoal, serif;
+    ;
+}
+
+.row {
+    padding-top: 15px;
+}
+
+H1 {
+    padding-bottom: 15px;
+}
+
+H2 {
+    font-family: comic sans MS, comic sans, cursive;
+    padding: 15px;
+}
+
+H4 {
+    text-align: center;
+}
+.btn-primary {
+    background-color: #75bfdd;
+    font-weight: bold;
+    border: 1px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-toggle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.top_row {
+    background-color: #9dd1e5;
+}
+
+.bg-faded {
+    padding-left: 15px;
+}
+
+th {
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+.index_image {
+    padding-bottom: 20px;
+}
+
+.img_sidebar {
+    padding-bottom: 25px;
+    align-content: center
+}
+
+.sidebar{
+    background-color: ;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .navbar-light {
+        background-color: #9dd1e5;
+      }
 }

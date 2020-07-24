@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Bootstrap Components</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <div class="container">
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="mx-auto" style="width: 380px;">
-          <h1>  Tyler Ward's Portfolio</h1>
+  <nav class="navbar navbar-light navbar-expand-md bg-faded">
+    <div class="intro_small">
+      <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">DISECTING WEATHER WITH DATA!</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100 justify-content-end" id="collapsingNavbar3">
+      <div class="dropdown btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="collapsingNavbar3">
+          Plots
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+          <a class="dropdown-item" href="wind_speed.html">Latitude vs. Wind Speed</a>
         </div>
       </div>
-    </div> 
-    <div class="row row-cols-1 row-cols-md-12">
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="Images/1.jpg" class="card-img-top" alt="Data Science 1">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
+      <a class="btn btn-secondary" href="comparison.html" role="button">Comparisons</a>
+      <a class="btn btn-secondary" href="data.html" role="button">Data</a>
+    </div>
+  </nav>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 col-sm 12">
+      <H1 class="intro">Disecting Weather with Data!</H1>
+      <div class="index_image">
+        <img width="100%" src="Resources/images/stormy_sydney.jpg" />
+      </div>
+      <p>
+        The purpose of this project was to analyze how weather
+        hanges as you approach the equator. To accomplish this
+        analysis, we first needed to pull data from the
+        OpenWeatherMap API to assemble a randomized dataset
+        of over 500 cities.
+      </p>
+      <p>
+        After assembling the dataset, we used Matplotlib to
+        plot various aspects of the weather vs. latitude. Some
+        factors that we analyzed included:
+      </p>
+      <ul>
+        <li>Temperature</li>
+        <li>Cloudiness</li>
+        <li>Windspeed</li>
+        <li>Humidity</li>
+      </ul>
+      <p>
+        This site provides the source data and visualizations
+        created as part of the analysis as well as the explanations
+        and descriptions of any trends and correlations that were
+        observed.
+      </p>
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-4 col-xs-6">
+      <H3> Quick Links to the Plots</H3>
+      <div class="sidebar">
+        <div class="img_sidebar">
+          <a class="inline-block" href="temperature.html">
+            <img width="90%" src="Resources/assets/temperature.png" />
+            <figcaption class="figure-caption text-center">
+              Latitude vs. Temperature
+            </figcaption>
+          </a>
         </div>
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="Images/2.jpeg" class="card-img-top" alt="Data Science 2">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
+        <div class="img_sidebar">
+          <a class="inline-block" href="cloudiness.html">
+            <img width="90%" src="Resources/assets/cloudiness.png" />
+            <figcaption class="figure-caption text-center">
+              Latitude vs. Cloudiness
+            </figcaption>
+          </a> 
         </div>
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="Images/3.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="Project 3">Project 3</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
+        <div class="img_sidebar">
+          <a class="inline-block" href="humidity.html">
+            <img width="90%" src="Resources/assets/humidity.png" />
+            <figcaption class="figure-caption text-center">
+              Latitude vs. Humidity
+            </figcaption>
+          </a> 
+        </div>
+        <div class="img_sidebar">
+          <a class="inline-block" href="wind_speed.html">
+            <img width="90%" src="Resources/assets/wind_speed.png" />
+            <figcaption class="figure-caption text-center">
+              Latitude vs. Wind Speed
+            </figcaption>
+          </a> 
         </div>
       </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+  </div>
+</div> 
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-</html>

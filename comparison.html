@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Data Comparison</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-md bg-faded">
+        <div class="intro_small">
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">DISECTING WEATHER WITH DATA!</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 justify-content-end" id="collapsingNavbar3">
+            <div class="dropdown btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="collapsingNavbar3">
+                Plots
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Latitude vs. Wind Speed</a>
+            </div>
+            </div>
+            <a class="btn btn-secondary" href="comparison.html" role="button">Comparisons</a>
+            <a class="btn btn-secondary" href="data.html" role="button">Data</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <H2>Latitudinal Meteorology - An Overview</H2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <a class="inline-block" href="temperature.html">
+                    <img width="100%" src="Resources/assets/temperature.png" />
+                </a>    
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a class="inline-block" href="humidity.html">
+                    <img width="100%" src="Resources/assets/humidity.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <a class="inline-block" href="cloudiness.html">
+                    <img width="100%" src="Resources/assets/cloudiness.png" />
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a class="inline-block" href="wind_speed.html">
+                   <img width="100%" src="Resources/assets/wind_speed.png"/>
+                </a>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
